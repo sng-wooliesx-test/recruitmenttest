@@ -19,6 +19,7 @@ namespace WooliesXChallenge
         {
             builder.RegisterType<SortService>().As<ISortService>();
             builder.RegisterType<ProductService>().As<IProductService>();
+            builder.RegisterType<TrolleyService>().As<ITrolleyService>();
             builder.RegisterType<RecruitmentClient>().As<IRecruitmentClient>();
 
             builder.Register(c => _configuration.GetSection("RecruitmentClientSettings").Get<RecruitmentClientSettings>()).SingleInstance();
