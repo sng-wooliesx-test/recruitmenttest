@@ -15,7 +15,12 @@ namespace WooliesXChallenge.Controllers
         {
             _productService = productService;
         }
-        
+
+        /// <summary>
+        /// Exercise 2 endpoint
+        /// </summary>
+        /// <param name="sortOption">Sort option must be either \"Low\", \"High\", \"Ascending\", \"Descending\", \"Recommended\" (case sensitive)</param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] string sortOption)
         {

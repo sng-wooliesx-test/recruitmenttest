@@ -11,6 +11,10 @@ namespace WooliesXChallenge.Controllers
     [Route("api/answers")]
     public class AnswersController : ControllerBase
     {
+        /// <summary>
+        /// Exercise 1 endpoint
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("user")]
         public async Task<IActionResult> Get()
