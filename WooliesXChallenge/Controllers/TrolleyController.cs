@@ -19,6 +19,11 @@ namespace WooliesXChallenge.Controllers
             _trolleyService = trolleyService;
         }
 
+        /// <summary>
+        /// This is not the expert mode, my sandbox code for attempting the sandbox code is in the project WooliesXChallenge.Sandbox
+        /// </summary>
+        /// <param name="trolley"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> GetCheapestCartTotal([FromBody] Trolley trolley)
         {
